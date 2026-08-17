@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutzerklärung – NOVA</title>
+<style>
+  :root { --accent: #7c3aed; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65; color: #1f2330; background: #fafafb;
+    max-width: 760px; margin: 0 auto; padding: 32px 20px 80px;
+  }
+  h1 { font-size: 1.7rem; color: var(--accent); margin: 0 0 .2em; }
+  h2 { font-size: 1.15rem; margin: 2em 0 .4em; border-bottom: 1px solid #eee; padding-bottom: .25em; }
+  h3 { font-size: 1rem; margin: 1.4em 0 .3em; }
+  a { color: var(--accent); }
+  code { background: #f0edfa; padding: 1px 5px; border-radius: 4px; font-size: .9em; }
+  ul { padding-left: 1.3em; }
+  li { margin: .3em 0; }
+  .draft {
+    background: #fff6e5; border: 1px solid #f5d58a; color: #7a5a00;
+    padding: 10px 14px; border-radius: 8px; font-size: .85rem; margin-bottom: 24px;
+  }
+  .backlink { display:inline-block; margin-bottom: 20px; font-size: .9rem; }
+  hr { border: none; border-top: 1px solid #eee; margin: 2em 0; }
+</style>
+</head>
+<body>
+<a class="backlink" href="index.html">← Übersicht</a>
+<h1>Datenschutzerklärung für die App „NOVA"</h1>
+<p><strong>Stand:</strong> 17. August 2026</p>
+<h2>1. Verantwortlicher</h2>
+<p>Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:</p>
+<p>Elyes Ben Abdallah<br />
+Waldstraße 126<br />
+63071 Offenbach am Main<br />
+Deutschland</p>
+<p>E-Mail: hello@trynova.eu</p>
+<p>Zur Benennung eines Datenschutzbeauftragten sind wir nach Art. 37 DSGVO nicht verpflichtet.</p>
+<h2>2. Überblick: Was die App macht</h2>
+<p>NOVA ist ein KI-Sprachassistent. Du kannst per Text oder Sprache Fragen stellen; die App<br />
+erstellt daraufhin mithilfe eines KI-Modells eine Antwort und kann diese auch vorlesen. Für<br />
+aktuelle Informationen kann die App eine Websuche durchführen.</p>
+<p>Diese Datenschutzerklärung erklärt, welche personenbezogenen Daten dabei verarbeitet werden,<br />
+zu welchem Zweck, auf welcher Rechtsgrundlage und an wen sie weitergegeben werden.</p>
+<p>Die App verwendet kein Nutzerkonto und keine Anmeldung. Wir erstellen kein Werbeprofil und<br />
+verkaufen keine Daten.</p>
+<h2>3. Welche Daten verarbeitet werden</h2>
+<h3>3.1 Chat-Inhalte (deine Eingaben und die Antworten)</h3>
+<p>Wenn du eine Nachricht schreibst oder sprichst, wird der <strong>Text deiner Anfrage</strong> an unseren<br />
+Server (Supabase Edge Function, Standort Frankfurt/EU) und von dort an den KI-Dienst<br />
+<strong>Anthropic (Claude API)</strong> übermittelt, um eine Antwort zu erzeugen. Die Antwort wird an deine<br />
+App zurückgesendet und dort angezeigt.</p>
+<p>Diese Inhalte können alles enthalten, was du eingibst – gib daher keine besonders sensiblen<br />
+Daten (z. B. Gesundheits-, Finanz- oder Ausweisdaten) ein, die du nicht verarbeitet haben<br />
+möchtest.</p>
+<h3>3.2 Mikrofon und Spracherkennung</h3>
+<p>Wenn du die Sprachfunktion nutzt, wird über das <strong>Mikrofon</strong> deines Geräts Audio aufgenommen<br />
+und in Text umgewandelt. Für diese Umwandlung setzen wir die <strong>Spracherkennung von Apple</strong><br />
+(<code>SFSpeechRecognizer</code>) ein. Dabei kann Apple die Audiodaten zur Verarbeitung an seine Server<br />
+übertragen. Es gelten insoweit die Datenschutzbestimmungen von Apple.</p>
+<p>Die App speichert keine Audioaufnahmen dauerhaft; die Aufnahme dient nur der Umwandlung in<br />
+Text. Die Nutzung des Mikrofons erfolgt nur, nachdem du die entsprechende Berechtigung erteilt<br />
+hast (siehe Ziffer 10).</p>
+<h3>3.3 Sprachausgabe (Vorlesen der Antworten)</h3>
+<p>Antworten können vorgelesen werden. Für eine natürliche Stimme wird der <strong>vorzulesende Text an<br />
+den Dienst OpenAI</strong> übermittelt, der daraus eine Audioausgabe erzeugt. Dabei werden Daten in die<br />
+USA übermittelt (siehe Ziffer 6). OpenAI nutzt die über die API übermittelten Inhalte nach<br />
+eigenen Angaben <strong>nicht zum Training</strong> seiner Modelle und speichert sie nur kurzzeitig<br />
+(i. d. R. bis zu 30 Tage) zur Missbrauchserkennung.</p>
+<h3>3.4 Websuche</h3>
+<p>Wenn zur Beantwortung eine Websuche nötig ist, wird eine Suchanfrage über den KI-Dienst<br />
+ausgeführt. Dabei wird ein <strong>fest hinterlegter, ungefährer Standort („Berlin")</strong> mitgegeben,<br />
+um regional passendere Ergebnisse zu liefern.</p>
+<p><strong>Wichtig:</strong> Die App ermittelt dabei <strong>nicht</strong> deinen tatsächlichen Standort. Der Wert „Berlin"<br />
+ist fest eingestellt und unabhängig davon, wo du dich befindest.</p>
+<h3>3.5 Technische Daten / Server-Protokolle</h3>
+<p>Beim Aufruf unseres Servers können technische Daten anfallen, die für den Betrieb und die<br />
+Sicherheit erforderlich sind, insbesondere die <strong>IP-Adresse</strong>, Datum/Uhrzeit der Anfrage und<br />
+technische Fehlermeldungen. Diese werden von unserem Hosting-Dienstleister (Supabase)<br />
+verarbeitet und dienen der Bereitstellung, Stabilität und dem Schutz vor Missbrauch.</p>
+<h3>3.6 Abonnement und Zahlungen</h3>
+<p>Wenn du ein kostenpflichtiges Abonnement abschließt, erfolgt die Zahlungsabwicklung über<br />
+<strong>Apple (App Store)</strong>. Wir erhalten von Apple <strong>keine</strong> vollständigen Zahlungsdaten<br />
+(z. B. Kreditkartennummer), sondern nur die Information, ob ein Abo aktiv ist.</p>
+<p>Zur Verwaltung der Abonnements setzen wir den Dienst <strong>RevenueCat</strong> ein. Dabei werden eine<br />
+anonyme Nutzer-/Gerätekennung sowie Kaufinformationen (z. B. gekauftes Produkt, Kaufdatum,<br />
+Ablaufdatum) verarbeitet. RevenueCat kann Daten in den USA verarbeiten (siehe Ziffer 6).</p>
+<h2>4. Zwecke und Rechtsgrundlagen der Verarbeitung</h2>
+<p>Wir verarbeiten die genannten Daten zu folgenden Zwecken und auf folgenden Rechtsgrundlagen:</p>
+<ul>
+<li><strong>Bereitstellung der Assistenz-Funktion</strong> (Chat, Antworten, Websuche): zur Erfüllung des<br />
+  Nutzungsvertrags bzw. zur Durchführung vorvertraglicher Maßnahmen,<br />
+<strong>Art. 6 Abs. 1 lit. b DSGVO</strong>.</li>
+<li><strong>Mikrofon und Spracherkennung</strong>: auf Grundlage deiner <strong>Einwilligung</strong>,<br />
+<strong>Art. 6 Abs. 1 lit. a DSGVO</strong>, die du über die iOS-Berechtigungsabfrage erteilst und<br />
+  jederzeit widerrufen kannst.</li>
+<li><strong>Technische Daten, Sicherheit, Missbrauchsvermeidung, Stabilität</strong>: aufgrund unseres<br />
+  berechtigten Interesses am sicheren und funktionsfähigen Betrieb der App,<br />
+<strong>Art. 6 Abs. 1 lit. f DSGVO</strong>.</li>
+<li><strong>Abwicklung und Verwaltung von Abonnements</strong>: zur Vertragserfüllung,<br />
+<strong>Art. 6 Abs. 1 lit. b DSGVO</strong>.</li>
+</ul>
+<h2>5. Empfänger / eingesetzte Dienstleister</h2>
+<p>Zur Bereitstellung der App setzen wir folgende Dienstleister ein, die teils als<br />
+Auftragsverarbeiter für uns tätig sind:</p>
+<ul>
+<li><strong>Supabase</strong> (Hosting der Server-Funktion, Region Frankfurt/EU) – Bereitstellung der<br />
+  Schnittstelle zwischen App und KI-Dienst. Datenschutz: https://supabase.com/privacy</li>
+<li><strong>Anthropic PBC</strong> (KI-Modell „Claude", USA) – Erzeugung der Antworten. Anthropic nutzt die<br />
+  über die API übermittelten Inhalte nach eigenen Angaben <strong>nicht zum Training</strong> seiner Modelle<br />
+  und speichert sie nur kurzzeitig gemäß seinen Commercial Terms.<br />
+  Datenschutz: https://www.anthropic.com/legal/privacy</li>
+<li><strong>OpenAI</strong> (Sprachausgabe/TTS, USA; EEA-Vertragspartner: OpenAI Ireland Ltd.) – Umwandlung<br />
+  des vorzulesenden Textes in Audio. Datenschutz: https://openai.com/policies/privacy-policy/</li>
+<li><strong>Apple</strong> (Spracherkennung, App-Store-Bereitstellung und Zahlungsabwicklung) –<br />
+  Datenschutz: https://www.apple.com/legal/privacy/</li>
+<li><strong>RevenueCat, Inc.</strong> (Abo-Verwaltung, USA) –<br />
+  Datenschutz: https://www.revenuecat.com/privacy/</li>
+</ul>
+<p>Eine Weitergabe an andere Dritte findet nicht statt, es sei denn, wir sind gesetzlich dazu<br />
+verpflichtet.</p>
+<h2>6. Übermittlung in Drittländer (USA)</h2>
+<p>Einige der oben genannten Dienste (insbesondere <strong>Anthropic, OpenAI</strong> sowie ggf. RevenueCat und<br />
+Apple) verarbeiten Daten in den <strong>USA</strong>. Die USA gelten als Drittland ohne generell<br />
+gleichwertiges Datenschutzniveau.</p>
+<p>Die Übermittlung erfolgt daher auf Grundlage der von der EU-Kommission erlassenen<br />
+<strong>Standardvertragsklauseln (Standard Contractual Clauses, Art. 46 DSGVO)</strong>, die Anthropic und<br />
+OpenAI jeweils in ihre Verträge (Data Processing Addendum) einbeziehen, sowie ggf. weiterer<br />
+geeigneter Garantien. Soweit ein Anbieter zusätzlich unter dem EU-U.S. Data Privacy Framework<br />
+zertifiziert ist, kann die Übermittlung auch hierauf gestützt werden.</p>
+<p>Trotz dieser Maßnahmen kann ein den EU-Standards vollständig entsprechendes Schutzniveau nicht<br />
+in jedem Fall garantiert werden; insbesondere ist ein Zugriff durch US-Behörden nicht gänzlich<br />
+auszuschließen.</p>
+<h2>7. Speicherdauer</h2>
+<p>Wir speichern personenbezogene Daten nur so lange, wie es für die jeweiligen Zwecke erforderlich<br />
+ist:</p>
+<ul>
+<li>Chat-Inhalte werden zur Erzeugung der Antwort verarbeitet und von uns nicht dauerhaft in einer<br />
+  eigenen Datenbank gespeichert. Bei Anthropic bzw. OpenAI erfolgt eine kurzzeitige Speicherung<br />
+  gemäß deren Aufbewahrungsregeln (i. d. R. bis zu 30 Tage).</li>
+<li>Technische Server-Protokolle werden nur für einen begrenzten Zeitraum zu Sicherheits- und<br />
+  Betriebszwecken vorgehalten und dann gelöscht.</li>
+<li>Abo-bezogene Daten für die Dauer des Vertrags und darüber hinaus im Rahmen gesetzlicher<br />
+  Aufbewahrungsfristen.</li>
+</ul>
+<h2>8. Deine Rechte</h2>
+<p>Du hast nach der DSGVO folgende Rechte:</p>
+<ul>
+<li><strong>Auskunft</strong> über die zu dir gespeicherten Daten (Art. 15 DSGVO)</li>
+<li><strong>Berichtigung</strong> unrichtiger Daten (Art. 16 DSGVO)</li>
+<li><strong>Löschung</strong> (Art. 17 DSGVO)</li>
+<li><strong>Einschränkung der Verarbeitung</strong> (Art. 18 DSGVO)</li>
+<li><strong>Datenübertragbarkeit</strong> (Art. 20 DSGVO)</li>
+<li><strong>Widerspruch</strong> gegen Verarbeitungen auf Basis berechtigten Interesses (Art. 21 DSGVO)</li>
+<li><strong>Widerruf einer Einwilligung</strong> mit Wirkung für die Zukunft (Art. 7 Abs. 3 DSGVO)</li>
+</ul>
+<p>Zur Ausübung deiner Rechte genügt eine E-Mail an hello@trynova.eu.</p>
+<h2>9. Beschwerderecht bei einer Aufsichtsbehörde</h2>
+<p>Du hast das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren, insbesondere in<br />
+dem EU-Mitgliedstaat deines Aufenthaltsorts oder des mutmaßlichen Verstoßes (Art. 77 DSGVO).</p>
+<p>Die für den Verantwortlichen zuständige Aufsichtsbehörde ist:<br />
+Der Hessische Beauftragte für Datenschutz und Informationsfreiheit,<br />
+Postfach 3163, 65021 Wiesbaden.</p>
+<h2>10. Berechtigungen und deren Widerruf</h2>
+<p>Die App bittet um folgende Berechtigungen:</p>
+<ul>
+<li><strong>Mikrofon</strong> – für die Sprachaufnahme</li>
+<li><strong>Spracherkennung</strong> – für die Umwandlung von Sprache in Text</li>
+</ul>
+<p>Du kannst diese Berechtigungen jederzeit in den iOS-Einstellungen unter<br />
+<strong>Einstellungen → Datenschutz &amp; Sicherheit</strong> bzw. <strong>Einstellungen → NOVA</strong> widerrufen. Ohne<br />
+diese Berechtigungen funktioniert die Sprachfunktion nicht, die Textfunktion bleibt jedoch<br />
+nutzbar.</p>
+<h2>11. Kinder</h2>
+<p>Die App richtet sich nicht an Kinder unter 16 Jahren. Personen unter diesem Alter sollten die<br />
+App nicht ohne Zustimmung der Erziehungsberechtigten nutzen.</p>
+<h2>12. Änderungen dieser Datenschutzerklärung</h2>
+<p>Wir passen diese Datenschutzerklärung an, wenn sich die Funktionen der App oder die rechtlichen<br />
+Rahmenbedingungen ändern. Es gilt jeweils die in der App bzw. unter der veröffentlichten URL<br />
+abrufbare aktuelle Fassung.</p>
+</body>
+</html>
